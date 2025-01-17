@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap" rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        :root {
+            --dark-purple: #2A4120;
+            --deep-blue: #1b1f4b;
+            --light-gray: #c5c6c7;
+            --soft-gold: #A25713;
+            --rich-black: #0d0d0d;
+        }
+
+        body {
+            font-family: "Modern Antiqua", serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--rich-black);
+            color: var(--light-gray);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            width: 100%;
+            background-color: var(--dark-purple);
+            color: var(--soft-gold);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        #portfolio {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .portfolio-item {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .portfolio-item h3 {
+            position: absolute;
+            bottom: 2rem;
+            left: 2rem;
+            font-size: 2rem;
+            color: var(--soft-gold);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .portfolio-item p {
+            position: absolute;
+            bottom: 1rem;
+            left: 2rem;
+            font-size: 1.2rem;
+            color: var(--light-gray);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        #contact {
+            text-align: center;
+            padding: 4rem 0;
+            background-color: var(--dark-purple);
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--soft-gold);
+        }
+
+        footer {
+            background-color: var(--dark-purple);
+            color: var(--light-gray);
+            text-align: center;
+            padding: 1rem 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: var(--soft-gold);
+            text-decoration: none;
+            color: var(--light-gray);
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+
+        }
+        a{
+            color: var(--light-gray);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dominik Piękoś</h1>
+        <p>Portfolio</p>
+    </header>
+
+    <div class="container">
+        <section id="portfolio">
+            <div class="portfolio-item">
+                <img src="Z1_Dominik_piekos.png" alt="Moodboard">
+                <h3>Moodboard</h3>
+                <p>Zamysł kolorystyczny</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="projektPostaci.png" alt="Projekt Postaci">
+                <h3>Projekt Postaci</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="inspiracje.png" alt="Inspiracje">
+                <h3>Inspiracje</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="logoGIF.gif" alt="Logo Animation">
+                <h3>Logo Animation</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="logo.png" alt="Logo">
+                <h3>Logo</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="Projekt lokacji.png" alt="Projekt Lokacji">
+                <h3>Projekt Lokacji</h3>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>I&#39;d love to hear from you! Reach out for collaborations or inquiries.</p>
+            <p>Email: <a href="mailto:dominik.piekos@edu.uekat.pl">dominik.piekos@edu.uekat.pl</a></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio | Dominik Piękoś</p>
+    </footer>
+</body>
+</html>
